@@ -22,6 +22,9 @@ const fileOutPut = (fileName) => {
             });
         })
     }
+    console.log("Update or install ffmpeg if not yet");
+    await runCommand('winget install -e --id Gyan.FFmpeg');
+    console.log("Finish updating ffmpeg");
     const files = await fs.readdir(INPUT_FOLDER_PATH);
     let fileProcess = 0;
     for (const file of files) {
