@@ -4,10 +4,10 @@ const sharp = require("sharp");
 
 // Input parameters
 const inputFolder =
-  "C:\\Users\\ADMIN\\Source\\wedding-site\\wedding-template-1\\public\\images\\wedding";
-const outputFolder = "C:\\Users\\ADMIN\\Downloads\\New folder";
+  "/home/dinhnt/source/wedding-site/client/linh-huyen/public/images/wedding";
+const outputFolder =
+  "/home/dinhnt/source/wedding-site/client/linh-huyen/public/images/wedding-webp";
 const outputExtension = "webp";
-const ratioDiffThreshold = 0.3;
 
 async function scanFolder(folderPath) {
   const imageQueue = [];
