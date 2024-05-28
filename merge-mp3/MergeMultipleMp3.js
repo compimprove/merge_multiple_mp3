@@ -2,8 +2,10 @@ const { exec } = require("child_process");
 const fs = require("fs").promises;
 const path = require("path");
 
-const INPUT_FOLDER_PATH = "C:\\Users\\ADMIN\\Downloads\\New folder";
-const OUTPUT_FOLDER_PATH = "C:\\Users\\ADMIN\\Downloads\\basic 2 x 10";
+const INPUT_FOLDER_PATH =
+  "/media/dinhnt/Ventoy/Basic - Intermediate/Audio Basic 1";
+const OUTPUT_FOLDER_PATH =
+  "/media/dinhnt/Ventoy/Basic - Intermediate/Basic 1 x 10";
 const TIME = 10;
 const fileOutPut = (fileName) => {
   return `${fileName}x10.mp3`;
